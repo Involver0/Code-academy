@@ -65,4 +65,42 @@
 }
 .navigation-icon::after {
   top: 0.5rem;
+}
+
+.hero-heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.hero-text {
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.5;
+}
+.hero-inner {
+  display: flex;
+  padding-left: 1rem;
+  align-items: flex-start;
+}
+.hero-image {
+  width: 50%;
+  position: relative;
+}
+.hero img {
+  width: 200%;
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+}
+
+.launching-soon {
+  text-transform: uppercase;
+  color: #ff3998;
+  padding: 1rem 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
