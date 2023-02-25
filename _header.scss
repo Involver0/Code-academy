@@ -4,8 +4,11 @@
   align-items: center;
   padding: 1rem 0.5rem;
 }
-
-.header-nav-link {
-  text-decoration: none;
-  color: #555555;
-}/*# sourceMappingURL=style.css.map */
+.header {
+  &-nav {
+    &-link {
+      text-decoration: none;
+      color: $color-grey;
+    }
+  }
+}
