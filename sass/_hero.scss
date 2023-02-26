@@ -1,30 +1,67 @@
 .hero {
+  &:first-child {
+    padding: 2rem;
+  }
+
+  &-text {
+    width: 16rem;
+  }
+
   &-heading {
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.2;
+    padding: 1rem 0;
   }
-  &-text {
+  &-par {
     font-weight: 300;
     font-size: 0.8rem;
     text-align: left;
     line-height: 1.5;
   }
 
+  &-button {
+    margin-top: 2rem;
+    padding: 2px;
+    position: relative;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, #ff7d74, #dcca9c) border-box;
+
+    span {
+      position: absolute;
+      color: #000;
+      z-index: 100;
+      text-align: center;
+      background-color: #fff;
+      width: 98px;
+      padding: 4px 3px 3px 3px;
+      height: 18px;
+      border-radius: 20px;
+      top: 0px;
+      left: 0px;
+      vertical-align: bottom;
+      cursor: pointer;
+    }
+  }
+
   &-inner {
     display: flex;
-    padding-left: 1rem;
+    padding: 2rem 0 3rem 2rem;
     align-items: flex-start;
   }
   &-image {
-    width: 50%;
+    width: 23rem;
     position: relative;
   }
   img {
     width: 200%;
     overflow: hidden;
     position: absolute;
-    top: -30px;
+    top: -65px;
+    left: 20px;
   }
 }
