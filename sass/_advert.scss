@@ -1,0 +1,33 @@
+.advert {
+  margin-top: 3em;
+
+  &-wrapper {
+    background: url(../assets/background.svg);
+    background-position: center center;
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  &-heading {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+
+  &-text {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 2rem;
+  }
+
+  &-companies {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

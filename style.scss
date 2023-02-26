@@ -1,7 +1,11 @@
 @import 'sass/variables';
+@import 'sass/utilities';
 @import 'sass/header';
 @import 'sass/hero';
-@import 'sass/utilities';
+@import 'sass/advert';
+@import 'sass/auction';
+@import 'sass/upsell';
+@import 'sass/footer';
 
 body {
   font-family: 'Roboto', sans-serif;

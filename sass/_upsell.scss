@@ -1,0 +1,19 @@
+.upsell {
+  margin: 2rem 0;
+  padding-top: 2rem;
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
+  &-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  &-col-1 {
+    padding-left: 2rem;
+    max-width: 40%;
+  }
+  &-col-2 {
+    max-width: 240px;
+    overflow: hidden;
+  }
+}

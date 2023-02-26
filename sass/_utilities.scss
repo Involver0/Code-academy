@@ -1,5 +1,44 @@
 .launching-soon {
   text-transform: uppercase;
   color: $color-pink;
-  padding: 2rem;
+  padding-top: 2rem;
+}
+
+.link-underline {
+  color: $color-grey;
+  font-weight: 300;
+  &:visited {
+    color: $color-grey;
+    font-weight: 300;
+  }
+  &:hover {
+    color: $color-pink;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+}
+
+.orange-text {
+  color: #fe8844;
+  text-transform: uppercase;
+}
+
+.gray-text {
+  color: #777777;
+
+  &-upper {
+    text-transform: uppercase;
+    color: #777777;
+  }
+}
+.black-text {
+  color: #111111;
+}
+
+.display-none {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
 }
