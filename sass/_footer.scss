@@ -1,5 +1,39 @@
 .footer {
   &-wrapper {
     padding: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  &-col-1 p {
+    margin: 1rem 0;
+    color: $color-grey;
+  }
+
+  &-nav-heading {
+    padding: 0.75rem 0;
+  }
+
+  &-nav-item {
+    padding-bottom: 0.5rem;
+    font-weight: 200;
+  }
+
+  &-nav-link,
+  &-nav-link:visited {
+    color: $color-grey;
+    text-decoration: none;
+  }
+
+  &-nav-link:hover {
+    color: $color-pink;
+  }
+
+  &-col-2 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    font-size: 0.75rem;
+    color: $color-grey;
   }
 }

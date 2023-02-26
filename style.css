@@ -276,6 +276,34 @@
 
 .footer-wrapper {
   padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.footer-col-1 p {
+  margin: 1rem 0;
+  color: #555555;
+}
+.footer-nav-heading {
+  padding: 0.75rem 0;
+}
+.footer-nav-item {
+  padding-bottom: 0.5rem;
+  font-weight: 200;
+}
+.footer-nav-link, .footer-nav-link:visited {
+  color: #555555;
+  text-decoration: none;
+}
+.footer-nav-link:hover {
+  color: #ff3998;
+}
+.footer-col-2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  font-size: 0.75rem;
+  color: #555555;
 }
 
 body {
