@@ -202,6 +202,12 @@
   .hero-inner {
     gap: 2rem;
   }
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .hero-par {
+    font-size: 1.5rem;
+  }
 }
 .advert {
   margin-top: 3em;
@@ -209,7 +215,7 @@
 .advert-wrapper {
   background: url(../assets/background.svg);
   background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   padding: 3rem 0;
 }
@@ -385,6 +391,15 @@
   color: #555555;
 }
 
+@media (min-width: 1024px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-col-2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
