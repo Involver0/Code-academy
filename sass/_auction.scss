@@ -1,6 +1,5 @@
 .auction {
   margin: 3em 0;
-  padding-left: 2rem;
 
   &-heading {
     text-transform: uppercase;
@@ -14,6 +13,7 @@
     font-size: 0.8rem;
     text-align: left;
     line-height: 1.5;
+    padding-left: 2rem;
   }
 
   &-card {
@@ -21,6 +21,13 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+
+    & div:nth-child(3),
+    & div:nth-child(4) {
+      display: none;
+    }
 
     &-description {
       display: grid;
@@ -51,6 +58,22 @@
       background-color: #eeeeee;
       border-radius: 15px;
       margin: 1rem 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .auction-card div:nth-child(3) {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .auction {
+    padding-right: 2rem;
+
+    &-card div:nth-child(4) {
+      display: block;
     }
   }
 }

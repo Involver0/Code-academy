@@ -5,6 +5,10 @@
   padding: 1rem 0.5rem;
 }
 .header {
+  &-link-img {
+    padding-left: 2rem;
+  }
+
   &-nav {
     &-item {
       padding: 0.4rem;

@@ -84,6 +84,9 @@
   padding: 1rem 0.5rem;
 }
 
+.header-link-img {
+  padding-left: 2rem;
+}
 .header-nav-item {
   padding: 0.4rem;
 }
@@ -162,7 +165,7 @@
   padding: 2rem;
 }
 .hero-text {
-  width: 16rem;
+  min-width: 16rem;
 }
 .hero-heading {
   text-transform: uppercase;
@@ -256,7 +259,6 @@
 }
 .auction {
   margin: 3em 0;
-  padding-left: 2rem;
 }
 .auction-heading {
   text-transform: uppercase;
@@ -270,12 +272,18 @@
   font-size: 0.8rem;
   text-align: left;
   line-height: 1.5;
+  padding-left: 2rem;
 }
 .auction-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.auction-card div:nth-child(3), .auction-card div:nth-child(4) {
+  display: none;
 }
 .auction-card-description {
   display: grid;
@@ -303,6 +311,19 @@
   margin: 1rem 0;
 }
 
+@media (min-width: 768px) {
+  .auction-card div:nth-child(3) {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .auction {
+    padding-right: 2rem;
+  }
+  .auction-card div:nth-child(4) {
+    display: block;
+  }
+}
 .upsell {
   margin: 2rem 0;
   padding-top: 2rem;
@@ -316,7 +337,7 @@
 }
 .upsell-col-1 {
   padding-left: 2rem;
-  width: 16rem;
+  min-width: 16rem;
 }
 .upsell-col-2 {
   max-width: 240px;
