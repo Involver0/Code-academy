@@ -16,6 +16,11 @@
     &-link {
       text-decoration: none;
       color: $color-grey;
+
+      &:hover {
+        color: $color-light-grey;
+        transition: all 0.2s;
+      }
     }
   }
 }
@@ -74,5 +79,14 @@
   }
   &::after {
     top: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-nav-ul {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
   }
 }

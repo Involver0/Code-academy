@@ -94,6 +94,10 @@
   text-decoration: none;
   color: #555555;
 }
+.header-nav-link:hover {
+  color: #999999;
+  transition: all 0.2s;
+}
 
 .active-link {
   color: #ff3998;
@@ -146,6 +150,14 @@
   top: 0.5rem;
 }
 
+@media (min-width: 1024px) {
+  .header-nav-ul {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
 .hero:first-child {
   padding: 2rem;
 }
