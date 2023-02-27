@@ -1,12 +1,26 @@
 .footer {
   &-wrapper {
     padding: 2rem;
-    display: flex;
-    gap: 2rem;
+    color: $color-grey;
   }
   &-col-1 p {
     margin: 1rem 0;
     color: $color-grey;
+  }
+
+  &-social {
+    margin-bottom: 1rem;
+
+    &-link,
+    &-link:visited {
+      color: $color-light-grey;
+      padding-right: 0.5rem;
+    }
+
+    &-link:hover {
+      color: $color-pink;
+      transition: all 0.2s;
+    }
   }
 
   &-nav-heading {
@@ -26,14 +40,13 @@
 
   &-nav-link:hover {
     color: $color-pink;
+    transition: all 0.2s;
   }
 
   &-col-2 {
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: $color-grey;
   }
 }

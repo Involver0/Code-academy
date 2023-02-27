@@ -43,6 +43,40 @@
   overflow-x: hidden;
 }
 
+.button {
+  margin-top: 2rem;
+  padding: 3px;
+  position: relative;
+  width: 110px;
+  height: 30px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: url(../assets/background.svg) border-box;
+  background-position: center center;
+}
+.button:hover {
+  background-position: center right;
+  transition: all 0.2s;
+}
+.button span {
+  position: absolute;
+  color: #111111;
+  z-index: 100;
+  text-align: center;
+  background-color: #fff;
+  width: 98px;
+  padding: 4px 3px 3px 3px;
+  height: 18px;
+  border-radius: 20px;
+  top: 0px;
+  left: 0px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.button span:hover {
+  color: #555555;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -131,35 +165,9 @@
   text-align: left;
   line-height: 1.5;
 }
-.hero-button {
-  margin-top: 2rem;
-  padding: 3px;
-  position: relative;
-  width: 110px;
-  height: 30px;
-  border-radius: 20px;
-  border: 3px solid transparent;
-  background: url(../assets/background.svg) border-box;
-  background-position: center center;
-}
-.hero-button span {
-  position: absolute;
-  color: #000;
-  z-index: 100;
-  text-align: center;
-  background-color: #fff;
-  width: 98px;
-  padding: 4px 3px 3px 3px;
-  height: 18px;
-  border-radius: 20px;
-  top: 0px;
-  left: 0px;
-  vertical-align: bottom;
-  cursor: pointer;
-}
 .hero-inner {
   display: flex;
-  padding: 2rem 0 3rem 2rem;
+  padding: 2rem 0 0 2rem;
   align-items: flex-start;
   overflow: hidden;
 }
@@ -267,7 +275,7 @@
 }
 .upsell-col-1 {
   padding-left: 2rem;
-  max-width: 40%;
+  width: 16rem;
 }
 .upsell-col-2 {
   max-width: 240px;
@@ -276,12 +284,22 @@
 
 .footer-wrapper {
   padding: 2rem;
-  display: flex;
-  gap: 2rem;
+  color: #555555;
 }
 .footer-col-1 p {
   margin: 1rem 0;
   color: #555555;
+}
+.footer-social {
+  margin-bottom: 1rem;
+}
+.footer-social-link, .footer-social-link:visited {
+  color: #999999;
+  padding-right: 0.5rem;
+}
+.footer-social-link:hover {
+  color: #ff3998;
+  transition: all 0.2s;
 }
 .footer-nav-heading {
   padding: 0.75rem 0;
@@ -296,13 +314,12 @@
 }
 .footer-nav-link:hover {
   color: #ff3998;
+  transition: all 0.2s;
 }
 .footer-col-2 {
-  text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #555555;
 }
 
